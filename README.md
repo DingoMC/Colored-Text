@@ -44,4 +44,9 @@ Example of text color manipulation: `&bHello World!`.
 This will change color of `Hello World!` to `AQUA`.
 
 Example of text and background color manipulation: `&1bHello World!`.  
-First modifier modifies background and second text color. So this will display `Hello World` in `AQUA` color on `DARK BLUE` background.
+First modifier modifies background and second text color. So this will display `Hello World!` in `AQUA` color on `DARK BLUE` background.
+
+Each string allows multiple manipulators.  
+Consider: `&bHe&allo &cWorld!`.  
+This will display `He` in `AQUA`, `llo ` in `GREEN` and `World!` in `RED`.  
+This feature also works for text and background color manipulation.
