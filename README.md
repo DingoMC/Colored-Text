@@ -56,4 +56,8 @@ This feature also works for text and background color manipulation.
 ### 3. In-built functions
 After you `#include "colored_text.h"` in your C++ file, you can access in-built functions via `ctext::` namespace.
 #### `text (const std::string &text, ct::Color text_color)`
+Usage: Displays string in one given color  
+Arguments:
+- `const std::string &text`: Text you wish to display
+- `ct::Color text_color`: Color from [Color Palette](#1-color-palette)
 #### `text (const std::string &CF_text)`
