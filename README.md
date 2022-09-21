@@ -39,3 +39,9 @@ Every manipulator must start with a character called **Executor** (by default `&
 Modifiers are hexadecimal values (Characters `0-9` and `a-f`) representing color value (`0-15`).  
 For example color `PURPLE` has a value of `5`, so the modifier will be `5`.  
 Color `YELLOW`, however, has a value of `14` so you need to use letters (`a = 10, b = 11, c = 12, d = 13, e = 14, f = 15`). In this case the modifier will be `e`.
+
+Example of text color manipulation: `&bHello World!`.  
+This will change color of `Hello World!` to `AQUA`.
+
+Example of text and background color manipulation: `&1bHello World!`.  
+First modifier modifies background and second text color. So this will display `Hello World` in `AQUA` color on `DARK BLUE` background.
