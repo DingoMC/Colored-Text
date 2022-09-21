@@ -50,3 +50,5 @@ Each string allows multiple manipulators.
 Consider: `&bHe&allo &cWorld!`.  
 This will display `He` in `AQUA`, `llo ` in `GREEN` and `World!` in `RED`.  
 This feature also works for text and background color manipulation.
+
+> **NOTE** Library checks correction of manipulators. If you type for example `&xHello`, it will be normally displayed as a `&xHello`, because `x` is not a valid modifier. It works with text and background formatting as well (so `&0a` is correct, but `&0x`, `&x0` or `&&0` are wrong).
