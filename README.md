@@ -33,7 +33,7 @@ Analogous there are 2 types of manipulators:
 - text color manipulator
 - text and background color manipulator
 
-> **NOTE** Manipulators can't be mixed in one string. In other words, when you use only text color formatting only, you cannot use background color manipulators and vice versa.
+> **NOTE:** Manipulators can't be mixed in one string. In other words, when you use only text color formatting only, you cannot use background color manipulators and vice versa.
 
 Every manipulator must start with a character called **Executor** (by default `&`). Then you type characters called **Modifiers**.  
 Modifiers are hexadecimal values (Characters `0-9` and `a-f`) representing color value (`0-15`).  
@@ -51,4 +51,7 @@ Consider: `&bHe&allo &cWorld!`.
 This will display `He` in `AQUA`, `llo ` in `GREEN` and `World!` in `RED`.  
 This feature also works for text and background color manipulation.
 
-> **NOTE** Library checks correction of manipulators. If you type for example `&xHello`, it will be normally displayed as a `&xHello`, because `x` is not a valid modifier. It works with text and background formatting as well (so `&0a` is correct, but `&0x`, `&x0` or `&&0` are wrong).
+> **NOTE:** Library checks correction of manipulators. If you type for example `&xHello`, it will be normally displayed as a `&xHello`, because `x` is not a valid modifier. It works with text and background formatting as well (so `&0a` is correct, but `&0x`, `&x0` or `&&0` are wrong).
+
+### 3. In-built functions
+After you `#include "colored_text.h"` in your C++ file, you can access in-built function via `ctext::` namespace.
