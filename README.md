@@ -61,3 +61,16 @@ Arguments:
 - `const std::string &text`: Text you wish to display
 - `ct::Color text_color`: Color from [Color Palette](#1-color-palette)
 #### `text (const std::string &CF_text)`
+Usage: Displays color formatted string  
+Arguments:
+- `const std::string &CF_text`: Color formatted string
+#### `bgtext (const std::string &text, ct::Color backgd_color, ct::Color text_color)`
+Usage: Displays string in one given color on one single background 
+Arguments:
+- `const std::string &text`: Text you wish to display
+- `ct::Color backgd_color`: Background Color from [Color Palette](#1-color-palette)
+- `ct::Color text_color`: Text Color from [Color Palette](#1-color-palette)
+#### `bgtext (const std::string &CFB_text)`
+Usage: Displays color formatted string  
+Arguments:
+- `const std::string &CFB_text`: Text and Background Color formatted string
