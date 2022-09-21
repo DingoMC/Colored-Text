@@ -74,3 +74,19 @@ Arguments:
 Usage: Displays color formatted string  
 Arguments:
 - `const std::string &CFB_text`: Text and Background Color formatted string
+#### `rainbow (const std::string &text)`
+Usage: Displays string as a full rainbow
+Arguments:
+- `const std::string &text`: Text you wish to display
+#### `rainbow_bg (const std::string &text)`
+Usage: Displays string as a full rainbow with colored background
+Arguments:
+- `const std::string &text`: Text you wish to display
+#### `rainbow_cycle (const std::string &text)`
+Usage: Displays string as a cycling rainbow (Cycle repeats every 10 characters)
+Arguments:
+- `const std::string &text`: Text you wish to display
+#### `rainbow_bg_cycle (const std::string &text)`
+Usage: Displays string as a cycling rainbow with colored background (Cycle repeats every 10 characters)
+Arguments:
+- `const std::string &text`: Text you wish to display
