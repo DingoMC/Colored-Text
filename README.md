@@ -24,4 +24,14 @@ Windows Terminal provides 16 colors:
 
 You can access them via ct namespace (eg. `ct::DARK_RED`).
 ### 2. Color-formatted text
-To manipulate text color you need to add special characters called **manipulators** to your string to create so called **formatted string**.
+To manipulate text color you need to add special characters called **manipulators** to your string to create so called **formatted string**.  
+There are 2 types of formatted strings:
+- text color formatting only (called in functions as `CF_text`)
+- text and background color formatting (called in functions as `CFB_text`)
+
+Analogous there are 2 types of manipulators:
+- text color manipulator
+- text and background color manipulator
+
+> **NOTE** Manipulators can't be mixed in one string. In other words, when you use only text color formatting only, you cannot use background color manipulators and vice versa.
+
