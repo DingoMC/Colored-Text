@@ -35,3 +35,7 @@ Analogous there are 2 types of manipulators:
 
 > **NOTE** Manipulators can't be mixed in one string. In other words, when you use only text color formatting only, you cannot use background color manipulators and vice versa.
 
+Every manipulator must start with a character called **Executor** (by default `&`). Then you type characters called **Modifiers**.  
+Modifiers are hexadecimal values (Characters `0-9` and `a-f`) representing color value (`0-15`).  
+For example color `PURPLE` has a value of `5`, so the modifier will be `5`.  
+Color `YELLOW`, however, has a value of `14` so you need to use letters (`a = 10, b = 11, c = 12, d = 13, e = 14, f = 15`). In this case the modifier will be `e`.
